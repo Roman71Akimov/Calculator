@@ -1,9 +1,11 @@
 public class Main {
-
-    public static String calc(String input)  {
+    public static void main(String[] args) {
+        System.out.println(calc());
+    }
+    public static String calc()  {
         String output = "";
         try { String [] exp;
-        exp = Input.input(input);
+        exp = Input.input();
     if (isInteger(exp[0])&&isInteger(exp[1])){
     output = String.valueOf(Calculation.calculation(exp));}
     else {

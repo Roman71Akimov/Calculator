@@ -1,8 +1,9 @@
+import java.util.Scanner;
 
-
- class Input {
-    public static String[] input(String input) throws CalculatorExceptions{
-        String expression = input.replaceAll("\\s","");
+class Input {
+    public static String[] input() throws CalculatorExceptions{
+        Scanner scanner = new Scanner(System.in);
+        String expression =scanner.nextLine().replaceAll("\\s","");
         String [] expr = new String[0];
         String [] exp = new String[3];
         //разделяем строку по оператору и записываем в массив информацию о операндах и операторе
